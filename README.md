@@ -164,5 +164,144 @@ foreach ($colors as $value) {
 ?>
 ```
 ## String Functions
+- **Để xử lý chuỗi trong PHP, cung cấp rất nhiều hàm có sẵn để làm việc với chuỗi.**
+- **Một số hàm phổ biến hay sử dụng:**
+
+
+1. Hàm strlen(): sử dụng để xem độ dài của chuỗi.
+```angular2html
+<?php
+ $string = "PHP is a programming language.";
+ $length = strlen($string);
+ echo $length;
+?>
+Output: 30
+```
+2. Hàm str_replace: dùng để thay thế 1 số ký tự trong chuỗi bằng 1 số ký tự khác.
+`
+   str_replace(Search, Replace, Subject)
+`
+```angular2html
+<?php
+ $string = "Hello Troposal";
+ $search = "Hello";
+ $replace = "Hi";
+ $newString = str_replace($search, $replace, $string);
+ echo $newString;
+?>
+Output: Hi Troposal
+```
+3. Hàm strstr(): hiển thị phần chuỗi kể từ lần xuất hiện tìm kiếm đầu tiên đến cuối chuỗi.
+4. Hàm strtolower():      biến chuỗi thành chữ thường.
+5. Hàm strtouper():       biến chuỗi thành chữ hoa.
+6. Hàm str_word_count():  đếm các từ có trong chuỗi.
+7. Hàm strrev():          dùng để đảo ngược chuỗi.
+8. Hàm strpos(): dùng để xác định vị trí ban đầu của 1 chuỗi trong chuỗi gốc.
+9. Hàm ucwords(): chuyển đổi chữ cái đầu tiên của các từ thành chữ hoa.
+10. Hàm ucfirst(): chuyển chữ cái đầu tiên của chuỗi thành hoa.
+11. Hàm lcfirst(): chuyển chữ cái đầu tiên của chuỗi thành chữ thường.
+12. Hàm trim(): loại bỏ khoảng trắng ở đầu hoặc cuối chuỗi.
+
 ## Array Functions
+
+1. Hàm array_filter(): Lọc các giá trị của một mảng bằng hàm gọi lại.
+<details open>
+<summary>Example</summary>
+
+````
+<?php
+function test_odd($var)
+  {
+  return($var & 1);
+  }
+
+$a1=array(1,3,2,3,4);
+print_r(array_filter($a1,"test_odd"));
+?>
+````
+</details>
+2. Hàm array_merge(): hợp nhất 2 mảng thành một.
+<details open>
+<summary>Example</summary>
+
+```
+<?php
+$a1=array("red","green");
+$a2=array("blue","yellow");
+print_r(array_merge($a1,$a2));
+?>
+```
+</details>
+3. Hàm array_pop(): Xóa phần tử cuối của mảng.
+<details open>
+<summary>Example</summary>
+
+```
+<?php
+$a=array("red","green","blue");
+array_pop($a);
+print_r($a);
+?>
+```
+</details>
+4. Hàm array_push(): thêm phần tử vào cuối mảng.
+<details open>
+<summary>Example</summary>
+
+```
+<?php
+$a=array("red","green");
+array_push($a,"blue","yellow");
+print_r($a);
+?>
+```
+</details>
+5. Hàm array_search(): Tìm kiếm theo từ khóa và trả về key của nó trong mảng.
+<details open>
+<summary>Example</summary>
+
+```
+<?php
+$a=array("a"=>"red","b"=>"green","c"=>"blue");
+echo array_search("red",$a);
+?>
+```
+</details>
+6. Hàm array_shift(): Xóa 1 phần tử đầu mảng vả trả về phần tử đó.
+<details open>
+<summary>Example</summary>
+
+```
+<?php
+$a=array("a"=>"red","b"=>"green","c"=>"blue");
+echo array_shift($a);
+print_r ($a);
+?>
+```
+</details>
+7. Hàm array_unshift(): Thêm phần tử vào đầu mảng.
+<details open>
+<summary>Example</summary>
+
+```
+<?php
+$a=array("a"=>"red","b"=>"green");
+array_unshift($a,"blue");
+print_r($a);
+?>
+```
+</details>
+8. Hàm count(): Trả về số phần tử của mảng.
+<details open>
+<summary>Example</summary>
+
+```
+<?php
+$cars=array("Volvo","BMW","Toyota");
+echo count($cars);
+?>
+```
+</details>
+9. Hàm sort(): sắp xếp mảng.
+
 ## File handling
