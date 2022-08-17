@@ -205,7 +205,7 @@ Output: Hi Troposal
 ## Array Functions
 
 1. Hàm array_filter(): Lọc các giá trị của một mảng bằng hàm gọi lại.
-<details open>
+<details>
 <summary>Example</summary>
 
 ````
@@ -221,7 +221,7 @@ print_r(array_filter($a1,"test_odd"));
 ````
 </details>
 2. Hàm array_merge(): hợp nhất 2 mảng thành một.
-<details open>
+<details>
 <summary>Example</summary>
 
 ```
@@ -233,7 +233,7 @@ print_r(array_merge($a1,$a2));
 ```
 </details>
 3. Hàm array_pop(): Xóa phần tử cuối của mảng.
-<details open>
+<details>
 <summary>Example</summary>
 
 ```
@@ -245,7 +245,7 @@ print_r($a);
 ```
 </details>
 4. Hàm array_push(): thêm phần tử vào cuối mảng.
-<details open>
+<details>
 <summary>Example</summary>
 
 ```
@@ -257,7 +257,7 @@ print_r($a);
 ```
 </details>
 5. Hàm array_search(): Tìm kiếm theo từ khóa và trả về key của nó trong mảng.
-<details open>
+<details>
 <summary>Example</summary>
 
 ```
@@ -268,7 +268,7 @@ echo array_search("red",$a);
 ```
 </details>
 6. Hàm array_shift(): Xóa 1 phần tử đầu mảng vả trả về phần tử đó.
-<details open>
+<details>
 <summary>Example</summary>
 
 ```
@@ -280,7 +280,7 @@ print_r ($a);
 ```
 </details>
 7. Hàm array_unshift(): Thêm phần tử vào đầu mảng.
-<details open>
+<details>
 <summary>Example</summary>
 
 ```
@@ -292,7 +292,7 @@ print_r($a);
 ```
 </details>
 8. Hàm count(): Trả về số phần tử của mảng.
-<details open>
+<details>
 <summary>Example</summary>
 
 ```
